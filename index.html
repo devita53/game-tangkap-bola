@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Tangkap Bola</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HALAMAN LOGIN -->
+    <div class="container" id="loginPage">
+
+        <div class="login-box">
+
+            <div class="icon">🎮</div>
+
+            <h1>Game Tangkap Bola</h1>
+
+            <p>Masukkan nama pengguna untuk mulai bermain.</p>
+
+            <form id="loginForm">
+
+                <label for="username">
+                    Nama Pengguna
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Masukkan nama kamu"
+                    maxlength="20"
+                    required
+                >
+
+                <button type="submit">
+                    Mulai Bermain
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- HALAMAN GAME -->
+    <div class="container hidden" id="gamePage">
+
+        <div class="game-box">
+
+            <div class="game-header">
+
+                <div>
+                    <h1>⚽ Tangkap Bola</h1>
+
+                    <p>
+                        Halo, <strong id="playerName"></strong>!
+                    </p>
+                </div>
+
+                <button
+                    class="logout-button"
+                    id="logoutButton"
+                >
+                    Keluar
+                </button>
+
+            </div>
+
+
+            <!-- INFORMASI GAME -->
+            <div class="game-info">
+
+                <div class="info-box">
+                    <span>⭐ Skor</span>
+                    <strong id="score">0</strong>
+                </div>
+
+                <div class="info-box">
+                    <span>⏱️ Waktu</span>
+                    <strong>
+                        <span id="time">30</span> detik
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <!-- AREA PERMAINAN -->
+            <div id="gameArea">
+
+                <button
+                    id="ball"
+                    class="ball"
+                    aria-label="Bola"
+                >
+                    ⚽
+                </button>
+
+            </div>
+
+
+            <!-- HASIL -->
+            <div
+                id="result"
+                class="result"
+            ></div>
+
+
+            <button
+                id="startButton"
+                class="start-button"
+            >
+                Mulai Game
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
