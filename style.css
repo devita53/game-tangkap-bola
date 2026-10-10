@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 100%;
+    max-width: 700px;
+}
+
+
+/* LOGIN */
+
+.login-box {
+    background: white;
+
+    width: 100%;
+    max-width: 420px;
+
+    margin: auto;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+
+.login-box h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+
+.login-box p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+/* FORM */
+
+label {
+    display: block;
+
+    text-align: left;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+
+input:focus {
+    outline: none;
+
+    border-color: #2196f3;
+}
+
+
+/* BUTTON */
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.login-box button {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #2196f3;
+
+    color: white;
+
+    border-radius: 10px;
+}
+
+
+.login-box button:hover {
+    background: #1976d2;
+}
+
+
+/* GAME */
+
+.game-box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.game-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.game-header h1 {
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+
+.game-header p {
+    color: #777;
+}
+
+
+.logout-button {
+    background: #ef4444;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+}
+
+
+.logout-button:hover {
+    background: #dc2626;
+}
+
+
+/* INFORMASI */
+
+.game-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.info-box {
+    background: #f1f7ff;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+
+.info-box span {
+    display: block;
+
+    color: #555;
+
+    margin-bottom: 5px;
+}
+
+
+.info-box strong {
+    font-size: 22px;
+
+    color: #1976d2;
+}
+
+
+/* AREA GAME */
+
+#gameArea {
+    position: relative;
+
+    width: 100%;
+
+    height: 350px;
+
+    background: #e8f5e9;
+
+    border: 3px solid #81c784;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+
+/* BOLA */
+
+.ball {
+    position: absolute;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: left 0.15s, top 0.15s;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.ball:hover {
+    transform: scale(1.1);
+}
+
+
+/* HASIL */
+
+.result {
+    text-align: center;
+
+    min-height: 40px;
+
+    margin: 15px 0;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #1976d2;
+}
+
+
+/* START BUTTON */
+
+.start-button {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #2196f3;
+
+    color: white;
+
+    border-radius: 10px;
+}
+
+
+.start-button:hover {
+    background: #1976d2;
+}
+
+
+/* HIDDEN */
+
+.hidden {
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .game-box {
+        padding: 18px;
+    }
+
+    .game-header {
+        align-items: flex-start;
+    }
+
+    .game-header h1 {
+        font-size: 22px;
+    }
+
+    #gameArea {
+        height: 300px;
+    }
+
+    .game-info {
+        gap: 8px;
+    }
+
+}
